@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 4rem 0;
+}
+
+.hero .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #bfdbfe;
+    max-width: 36rem;
+}
+.hero button {
+            background-color: #003366;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+.hero button:hover {
+            background-color: black;
+        }
+.hero .auth-button{
+	margin: 1rem auto;
+            background-color: white;
+            color: #003366;
+            width: 80%;
+            border-collapse: collapse;
+}
+/* Introduction Section */
+.intro {
+    padding: 4rem 0;
+}
+
+.intro h2, .leadership h2, .awards h2, .locations h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card svg {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    color: #6b7280;
+}
+
+/* Leadership Section */
+.leadership {
+    background: white;
+    padding: 4rem 0;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9999px;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.team-member p {
+    color: #6b7280;
+}
+
+/* Awards Section */
+.awards {
+    padding: 4rem 0;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.award-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.award-card svg {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.award-card p {
+    color: #6b7280;
+}
+
+/* Locations Section */
+.locations {
+    background: #f1f5f9;
+    padding: 4rem 0;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.location-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.location-card svg {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.location-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.location-card p {
+    color: #6b7280;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    color: #bfdbfe;
+}
+
+.footer-links h4, .footer-security h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #bfdbfe;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.security-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #bfdbfe;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2563eb;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #bfdbfe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .features, .team, .awards-grid, .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand .logo {
+        justify-content: center;
+    }
+
+    .security-badge {
+        justify-content: center;
+    }
+}
